@@ -1,0 +1,918 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beautiful Flowers - Biology</title>
+
+<style>
+
+/* GENERAL DESIGN */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f1f8f2;
+    color: #294d37;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+header {
+    background: #237447;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+nav {
+    background: #294d37;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a8e6b7;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* TOPIC SECTIONS */
+.topic {
+    background: #e8f4e9;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 15px;
+}
+
+.topic h2 {
+    color: #237447;
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 12px;
+}
+
+.topic-intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* CARDS */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #26834c;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    max-height: 260px;
+    object-fit: contain;
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+.card ul {
+    padding-left: 22px;
+}
+
+/* CENTER LAST CARD WHEN ODD */
+.cards-container > .card:last-child:nth-child(odd) {
+    grid-column: 1 / 3;
+    width: 50%;
+    justify-self: center;
+}
+
+/* CONCLUSION */
+.conclusion {
+    background: #e0f2e5;
+    border-left: 5px solid #26834c;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.conclusion h3 {
+    color: #237447;
+    margin-bottom: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #294d37;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 35px;
+}
+
+/* MOBILE DESIGN */
+@media(max-width: 650px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .topic {
+        padding: 16px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-container > .card:last-child:nth-child(odd) {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .topic h2 {
+        font-size: 24px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>🌸 Beautiful Flowers 🌸</h1>
+    <p>Explore the Beauty and Reproduction of Flowering Plants</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#beautiful-flowers">Beautiful Flowers</a>
+    <a href="#reproduction">Reproduction</a>
+    <a href="#pollination">Pollination</a>
+    <a href="#fertilization">Fertilization</a>
+    <a href="#seeds">Seeds</a>
+    <a href="#germination">Germination</a>
+</nav>
+
+<div class="container">
+
+<!-- 1. BEAUTIFUL FLOWERS -->
+<section class="topic" id="beautiful-flowers">
+
+<h2>1. Beautiful Flowers</h2>
+
+<p class="topic-intro">
+Flowers are the beautiful and reproductive parts of flowering plants.
+They show different colours, shapes and sizes.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>Introduction to Flowers</h3>
+<p>
+A flower is the reproductive structure of an angiosperm.
+It helps plants reproduce and produce seeds.
+</p>
+<img src="beautiful-flowers.jpg" alt="Beautiful flowers">
+</div>
+
+<div class="card">
+<h3>Importance of Flowers</h3>
+<ul>
+<li>Flowers help in plant reproduction.</li>
+<li>They attract pollinators.</li>
+<li>They produce seeds and fruits.</li>
+<li>Many flowers are used for decoration and perfumes.</li>
+</ul>
+<img src="flower-garden.jpg" alt="Flower garden">
+</div>
+
+</div>
+</section>
+
+
+<!-- 2. REPRODUCTION IN PLANTS -->
+<section class="topic" id="reproduction">
+
+<h2>2. Reproduction in Plants</h2>
+
+<p class="topic-intro">
+Reproduction is the biological process by which plants produce new plants of their own kind.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>Definition of Reproduction</h3>
+<p>
+Reproduction is the process by which living organisms produce offspring.
+In plants, reproduction may be sexual or asexual.
+</p>
+<img src="plant-reproduction.jpg" alt="Plant reproduction">
+</div>
+
+<div class="card">
+<h3>Types of Reproduction</h3>
+<ul>
+<li><b>Sexual Reproduction:</b> Involves the fusion of male and female gametes.</li>
+<li><b>Asexual Reproduction:</b> A new plant develops from one parent without fusion of gametes.</li>
+</ul>
+<img src="types-of-reproduction.jpg" alt="Types of plant reproduction">
+</div>
+
+</div>
+</section>
+
+
+<!-- 3. STRUCTURE OF A FLOWER -->
+<section class="topic">
+
+<h2>3. Structure of a Flower</h2>
+
+<p class="topic-intro">
+A typical flower consists of four main whorls arranged on the receptacle.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>Four Main Whorls</h3>
+<ul>
+<li>Calyx – made up of sepals.</li>
+<li>Corolla – made up of petals.</li>
+<li>Androecium – male reproductive part.</li>
+<li>Gynoecium – female reproductive part.</li>
+</ul>
+<img src="flower-structure.jpg" alt="Structure of a flower">
+</div>
+
+<div class="card">
+<h3>Receptacle and Pedicel</h3>
+<p>
+The receptacle is the swollen tip of the flower stalk where floral parts are attached. The pedicel is the stalk that supports the flower.
+</p>
+<img src="flower-pedicel.jpg" alt="Flower receptacle and pedicel">
+</div>
+
+</div>
+</section>
+
+
+<!-- 4. PARTS OF A FLOWER -->
+<section class="topic">
+
+<h2>4. Parts of a Flower and Their Functions</h2>
+
+<p class="topic-intro">
+Each part of a flower performs a special function.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>Sepals</h3>
+<p>
+Sepals are usually green, leaf-like structures. They protect the flower when it is in the bud stage.
+</p>
+<img src="sepals.jpg" alt="Sepals">
+</div>
+
+<div class="card">
+<h3>Petals</h3>
+<p>
+Petals are usually colourful and help attract insects and other pollinators.
+</p>
+<img src="petals.jpg" alt="Petals">
+</div>
+
+<div class="card">
+<h3>Stamen</h3>
+<p>
+The stamen is the male reproductive part of a flower. It consists of anther and filament.
+</p>
+<img src="stamen.jpg" alt="Stamen">
+</div>
+
+<div class="card">
+<h3>Pistil</h3>
+<p>
+The pistil is the female reproductive part. It consists of stigma, style and ovary.
+</p>
+<img src="pistil.jpg" alt="Pistil">
+</div>
+
+</div>
+</section>
+
+
+<!-- 5. STAMEN -->
+<section class="topic">
+
+<h2>5. Male Reproductive Part (Stamen)</h2>
+
+<p class="topic-intro">
+The stamen is the male reproductive organ of a flower.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>Structure of Stamen</h3>
+<p>
+A typical stamen consists of two main parts: anther and filament.
+</p>
+<img src="stamen-structure.jpg" alt="Stamen structure">
+</div>
+
+<div class="card">
+<h3>Anther</h3>
+<p>
+The anther is the upper part of the stamen. It produces pollen grains that contain the male gametophyte.
+</p>
+<img src="anther.jpg" alt="Anther">
+</div>
+
+<div class="card">
+<h3>Filament</h3>
+<p>
+The filament is a slender stalk that supports the anther and holds it in a suitable position.
+</p>
+<img src="filament.jpg" alt="Filament">
+</div>
+
+<div class="card">
+<h3>Pollen Grains</h3>
+<p>
+Pollen grains are produced in the anther. They carry the male gametophyte involved in fertilization.
+</p>
+<img src="pollen-grains.jpg" alt="Pollen grains">
+</div>
+
+</div>
+</section>
+
+
+<!-- 6. PISTIL -->
+<section class="topic">
+
+<h2>6. Female Reproductive Part (Pistil/Carpel)</h2>
+
+<p class="topic-intro">
+The pistil or carpel is the female reproductive organ of a flower.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>Structure of Pistil</h3>
+<p>
+The pistil consists of three main parts: stigma, style and ovary.
+</p>
+<img src="pistil-structure.jpg" alt="Pistil structure">
+</div>
+
+<div class="card">
+<h3>Stigma</h3>
+<p>
+The stigma is the upper part of the pistil. It receives pollen grains during pollination.
+</p>
+<img src="stigma.jpg" alt="Stigma">
+</div>
+
+<div class="card">
+<h3>Style</h3>
+<p>
+The style connects the stigma with the ovary. It provides a pathway for the pollen tube.
+</p>
+<img src="style.jpg" alt="Style">
+</div>
+
+<div class="card">
+<h3>Ovary and Ovule</h3>
+<p>
+The ovary contains ovules. After fertilization, the ovary usually develops into a fruit and the ovules develop into seeds.
+</p>
+<img src="ovary.jpg" alt="Ovary">
+<img src="ovule.jpg" alt="Ovule">
+</div>
+
+</div>
+</section>
+
+
+<!-- 7. POLLINATION -->
+<section class="topic" id="pollination">
+
+<h2>7. Pollination</h2>
+
+<p class="topic-intro">
+Pollination is an important step in the sexual reproduction of flowering plants.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>Definition of Pollination</h3>
+<p>
+Pollination is the transfer of pollen grains from the anther to the stigma of a flower.
+</p>
+<img src="pollination.jpg" alt="Pollination">
+</div>
+
+<div class="card">
+<h3>Importance of Pollination</h3>
+<ul>
+<li>It helps in sexual reproduction.</li>
+<li>It allows pollen to reach the stigma.</li>
+<li>It makes fertilization possible.</li>
+<li>It helps in seed and fruit formation.</li>
+</ul>
+<img src="pollination-process.jpg" alt="Pollination process">
+</div>
+
+</div>
+</section>
+
+
+<!-- 8. TYPES OF POLLINATION -->
+<section class="topic">
+
+<h2>8. Types of Pollination</h2>
+
+<p class="topic-intro">
+Pollination is mainly divided into two types.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>Self-Pollination</h3>
+<p>
+Self-pollination is the transfer of pollen grains from the anther to the stigma of the same flower or another flower on the same plant.
+</p>
+<p><b>Examples:</b> Pea and wheat.</p>
+<img src="self-pollination.jpg" alt="Self pollination">
+</div>
+
+<div class="card">
+<h3>Cross-Pollination</h3>
+<p>
+Cross-pollination is the transfer of pollen grains from the anther of one plant to the stigma of a flower on another plant of the same species.
+</p>
+<p><b>Examples:</b> Apple and papaya.</p>
+<img src="cross-pollination.jpg" alt="Cross pollination">
+</div>
+
+</div>
+</section>
+
+
+<!-- 9. AGENTS OF POLLINATION -->
+<section class="topic">
+
+<h2>9. Agents of Pollination</h2>
+
+<p class="topic-intro">
+Agents of pollination help transfer pollen grains from anther to stigma.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>Insects</h3>
+<p>
+Bees, butterflies and other insects carry pollen grains while visiting flowers for nectar.
+</p>
+<img src="bee-pollination.jpg" alt="Insect pollination">
+</div>
+
+<div class="card">
+<h3>Wind</h3>
+<p>
+Wind carries light pollen grains from one flower to another. Many grasses are wind-pollinated.
+</p>
+<img src="wind-pollination.jpg" alt="Wind pollination">
+</div>
+
+<div class="card">
+<h3>Water</h3>
+<p>
+In some aquatic plants, water helps transfer pollen grains.
+</p>
+<img src="water-pollination.jpg" alt="Water pollination">
+</div>
+
+<div class="card">
+<h3>Animals</h3>
+<p>
+Birds and some other animals help pollinate flowers while feeding on nectar.
+</p>
+<img src="animal-pollination.jpg" alt="Animal pollination">
+</div>
+
+</div>
+</section>
+
+
+<!-- 10. FERTILIZATION -->
+<section class="topic" id="fertilization">
+
+<h2>10. Fertilization in Flowering Plants</h2>
+
+<p class="topic-intro">
+Fertilization is the process in which male and female gametes fuse to form a zygote.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>Definition of Fertilization</h3>
+<p>
+Fertilization is the fusion of a male gamete with a female gamete. In flowering plants, it takes place inside the embryo sac of the ovule.
+</p>
+<img src="fertilization.jpg" alt="Fertilization">
+</div>
+
+<div class="card">
+<h3>Pollen Tube Formation</h3>
+<p>
+After pollination, a pollen grain germinates on the stigma and forms a pollen tube. The tube grows through the style towards the ovule.
+</p>
+<img src="pollen-tube.jpg" alt="Pollen tube">
+</div>
+
+</div>
+</section>
+
+
+<!-- 11. DOUBLE FERTILIZATION -->
+<section class="topic">
+
+<h2>11. Double Fertilization in Flowering Plants</h2>
+
+<p class="topic-intro">
+Double fertilization is a special feature of flowering plants. It involves two fusion events inside the embryo sac.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>1. Definition</h3>
+<p>
+Two male gametes take part in two separate fusion events inside the embryo sac. These events are called syngamy and triple fusion.
+</p>
+<img src="double-fertilization.jpg" alt="Double fertilization">
+</div>
+
+<div class="card">
+<h3>2. Pollen Tube Formation</h3>
+<p>
+The pollen tube grows from the pollen grain through the style towards the ovule. It carries two male gametes.
+</p>
+<img src="pollen-tube.jpg" alt="Pollen tube formation">
+</div>
+
+<div class="card">
+<h3>3. Entry into Ovule</h3>
+<p>
+The pollen tube usually enters the ovule through the micropyle and releases the two male gametes into the embryo sac.
+</p>
+<img src="pollen-tube-ovule.jpg" alt="Pollen tube entering ovule">
+</div>
+
+<div class="card">
+<h3>4. Syngamy</h3>
+<p>
+One male gamete fuses with the egg cell to form a diploid zygote (2n). The zygote develops into an embryo.
+</p>
+<img src="syngamy.jpg" alt="Syngamy">
+</div>
+
+<div class="card">
+<h3>5. Triple Fusion</h3>
+<p>
+The second male gamete fuses with the two polar nuclei to form a triploid primary endosperm nucleus (3n).
+</p>
+<img src="triple-fusion.jpg" alt="Triple fusion">
+</div>
+
+</div>
+
+<div class="conclusion">
+<h3>Importance of Double Fertilization</h3>
+<p>
+It leads to the formation of the embryo and endosperm. The endosperm provides nourishment to the developing embryo.
+</p>
+</div>
+
+</section>
+
+
+<!-- 12. ENDOSPERM -->
+<section class="topic">
+
+<h2>12. Development of Endosperm in Flowering Plants</h2>
+
+<p class="topic-intro">
+Endosperm is a nutritive tissue that provides food to the developing embryo.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>1. Definition of Endosperm</h3>
+<p>
+Endosperm is a food-storing tissue that usually develops from the primary endosperm nucleus after triple fusion. It is generally triploid (3n).
+</p>
+<img src="endosperm-structure.jpg" alt="Endosperm structure">
+</div>
+
+<div class="card">
+<h3>2. Formation of Endosperm</h3>
+<p>
+The second male gamete fuses with the two polar nuclei. The resulting primary endosperm nucleus divides repeatedly to form endosperm.
+</p>
+<img src="endosperm-formation.jpg" alt="Endosperm formation">
+</div>
+
+<div class="card">
+<h3>3. Types of Endosperm</h3>
+<ul>
+<li><b>Nuclear:</b> Nuclear divisions occur without immediate cell wall formation.</li>
+<li><b>Cellular:</b> Cell walls form after nuclear divisions.</li>
+<li><b>Helobial:</b> The first division forms two chambers.</li>
+</ul>
+<img src="types-of-endosperm.jpg" alt="Types of endosperm">
+</div>
+
+<div class="card">
+<h3>4. Functions of Endosperm</h3>
+<ul>
+<li>Stores food for the embryo.</li>
+<li>Provides nutrients during development.</li>
+<li>Supports early seed development.</li>
+</ul>
+<img src="endosperm-function.jpg" alt="Endosperm function">
+</div>
+
+<div class="card">
+<h3>5. Examples of Endosperm</h3>
+<p>
+Maize, wheat and rice contain food-storing endosperm. Coconut water is liquid endosperm, while its white edible part is solid endosperm.
+</p>
+<img src="endosperm-examples.jpg" alt="Endosperm examples">
+</div>
+
+</div>
+
+<div class="conclusion">
+<h3>Conclusion</h3>
+<p>
+Endosperm develops after triple fusion and provides nourishment to the developing embryo.
+</p>
+</div>
+
+</section>
+
+
+<!-- 13. EMBRYO DEVELOPMENT -->
+<section class="topic">
+
+<h2>13. Development of Embryo in Flowering Plants</h2>
+
+<p class="topic-intro">
+After fertilization, the zygote develops into an embryo inside the ovule.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>1. Formation of Zygote</h3>
+<p>
+The fusion of a male gamete with the egg cell forms a diploid zygote (2n).
+</p>
+<img src="zygote-formation.jpg" alt="Zygote formation">
+</div>
+
+<div class="card">
+<h3>2. First Division of Zygote</h3>
+<p>
+The zygote divides by mitosis. In many dicot plants, the first division produces a terminal cell and a basal cell.
+</p>
+<img src="zygote-division.jpg" alt="Zygote division">
+</div>
+
+<div class="card">
+<h3>3. Formation of Suspensor</h3>
+<p>
+The basal cell usually develops into the suspensor, which helps position the developing embryo.
+</p>
+<img src="suspensor.jpg" alt="Suspensor">
+</div>
+
+<div class="card">
+<h3>4. Stages of Embryo Development</h3>
+<p>
+In many dicot plants, the embryo passes through globular, heart-shaped and torpedo stages.
+</p>
+<img src="embryo-stages.jpg" alt="Embryo development stages">
+</div>
+
+<div class="card">
+<h3>5. Mature Embryo</h3>
+<p>
+A mature embryo generally contains a radicle, plumule, cotyledons and an embryonic axis.
+</p>
+<img src="mature-embryo.jpg" alt="Mature embryo">
+</div>
+
+</div>
+
+<div class="conclusion">
+<h3>Conclusion</h3>
+<p>
+The zygote develops through repeated cell divisions and differentiation to form the embryo of a new plant.
+</p>
+</div>
+
+</section>
+
+
+<!-- 14. FORMATION OF SEED AND FRUIT -->
+<section class="topic">
+
+<h2>14. Formation of Seed and Fruit</h2>
+
+<p class="topic-intro">
+After fertilization, the ovule and ovary develop into seed and fruit respectively.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>Formation of Seed</h3>
+<p>
+After fertilization, the ovule develops into a seed. The integuments usually form the seed coat.
+</p>
+<img src="seed-formation.jpg" alt="Seed formation">
+</div>
+
+<div class="card">
+<h3>Formation of Fruit</h3>
+<p>
+After fertilization, the ovary usually develops into a fruit. The ovary wall forms the fruit wall, called the pericarp.
+</p>
+<img src="fruit-formation.jpg" alt="Fruit formation">
+</div>
+
+<div class="card">
+<h3>Structure of Seed</h3>
+<p>
+A typical seed contains a seed coat, an embryo and stored food or nutritive tissue.
+</p>
+<img src="seed-structure.jpg" alt="Seed structure">
+</div>
+
+</div>
+</section>
+
+
+<!-- 15. TYPES AND STRUCTURE OF SEEDS -->
+<section class="topic" id="seeds">
+
+<h2>15. Types and Structure of Seeds</h2>
+
+<p class="topic-intro">
+Seeds are mainly classified into monocotyledonous and dicotyledonous seeds.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>Monocot Seed</h3>
+<p>
+A monocot seed has one cotyledon. Examples include maize, rice and wheat.
+</p>
+<img src="monocot-seed.jpg" alt="Monocot seed">
+</div>
+
+<div class="card">
+<h3>Dicot Seed</h3>
+<p>
+A dicot seed has two cotyledons. Examples include bean, pea and gram.
+</p>
+<img src="dicot-seed.jpg" alt="Dicot seed">
+</div>
+
+</div>
+</section>
+
+
+<!-- 16. SEED GERMINATION -->
+<section class="topic" id="germination">
+
+<h2>16. Seed Germination and Its Stages</h2>
+
+<p class="topic-intro">
+Seed germination is the process by which a seed develops into a young plant under suitable conditions.
+</p>
+
+<div class="cards-container">
+
+<div class="card">
+<h3>1. Absorption of Water</h3>
+<p>
+The seed absorbs water. This process is called imbibition and activates the seed.
+</p>
+</div>
+
+<div class="card">
+<h3>2. Breaking of Seed Coat</h3>
+<p>
+As the seed absorbs water, it swells and the seed coat breaks open.
+</p>
+</div>
+
+<div class="card">
+<h3>3. Growth of Radicle</h3>
+<p>
+The radicle emerges first and develops into the primary root.
+</p>
+</div>
+
+<div class="card">
+<h3>4. Growth of Plumule</h3>
+<p>
+The plumule develops into the shoot system of the young plant.
+</p>
+</div>
+
+<div class="card">
+<h3>5. Formation of Seedling</h3>
+<p>
+The young plant develops its first leaves and gradually becomes a seedling.
+</p>
+<img src="germination-stages.jpg" alt="Seed germination stages">
+<img src="seedling-growth.jpg" alt="Seedling growth">
+</div>
+
+</div>
+
+<div class="conclusion">
+<h3>Conditions Required for Germination</h3>
+<ul>
+<li>Water or moisture</li>
+<li>Oxygen</li>
+<li>Suitable temperature</li>
+</ul>
+</div>
+
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+<p>🌸 Beautiful Flowers | Biology Learning Website 🌸</p>
+<p>Learn • Explore • Grow</p>
+</footer>
+
+</body>
+</html>
